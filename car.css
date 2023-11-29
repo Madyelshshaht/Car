@@ -1,0 +1,399 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+
+}
+:root{
+    --gray-color:#eeeff1;
+    --yellow-car:#fea038;
+
+
+}
+.navbar img{
+    width: 50px;
+    animation: slideright 0.5s ease forwards ;
+    animation-delay:calc(0.2s * var(--i));
+    opacity: 0;
+}
+@keyframes slideright{
+  0%{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.Home{
+    background-color:var(--gray-color);
+    width: 100%;
+    min-height: 100vh;
+}
+.main-btn button{
+    border-radius: 10px;
+    background-color: #0e92ff;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    width: 100px;
+    outline: none;
+    border: none;
+    color: white;
+    animation: slideTop 0.5s ease forwards ;
+    animation-delay:calc(0.2s * var(--i));
+    opacity: 0;
+
+}
+#signup{
+    background-color: white;
+    color: black;
+}
+#signup:hover{
+    background-color: #0e92ff;
+}
+.navbar li{
+    position: relative;
+
+}
+.nav-item a{
+    color: black;
+    margin: 0.5rem 13px;
+    animation: slideTop 0.5s ease forwards ;
+    animation-delay:calc(0.2s * var(--i));
+    opacity: 0;
+}
+@keyframes slideTop{
+  0%{
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.nav-item a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--yellow-car);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transition: 0.5s;
+}
+.nav-item a:hover::after{
+    width: 100%;
+}
+.nav-item a:hover{
+    color: orange;
+}
+.navbar .navbar-toggler{
+    border: none;
+    outline: none;
+    
+}
+.content{
+    height:700px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    
+}
+.content span{
+    color: orange;
+    font-weight: bold;
+}
+.content p{
+    max-width: 300PX;
+    margin-top: 20px;
+}
+.content .image img{
+    width: 170px;
+    margin: 5px;
+}
+form{
+    background-color: white;
+    height: 70px;
+    width: 80%;
+}
+.featch img{
+    width: 50px;
+}
+.car-img{
+background-color: #fe6d3b;
+padding: 120px 0px;
+border-radius: 30px;
+}
+.car-img img{
+  animation: zoomin 2s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+@keyframes zoomin{
+  0%{
+      transform: scale(0);
+      opacity: 0;
+  }
+  100%{
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Ride */
+
+
+.Ride{
+    background-color: #eeeff1;
+    margin-top: 30px;
+}
+.Ride svg{
+    background-color: var(--yellow-car);
+    padding: 6px;
+}
+
+
+/* services */
+.Servises{
+    background-color: var(--gray-color);
+}
+.row .cars{
+    background-color:azure;
+}
+.row .cars p{
+    color: black;
+}
+.model{
+    border: solid 1px black;
+    width: 50px;
+    border-radius: 8px;
+    text-align: center;
+}
+#price{
+    color: #fea038;
+}
+.cars p span{
+    font-size: 10px;
+    color: black;
+}
+.cars button{
+    background-color: rgb(8, 8, 75);
+    color: white;
+    border-radius: 10px;
+}
+.cars img{
+    border-radius: 40px;
+}
+.cars{
+    margin: 10px;
+}
+/* about us */
+#aboutus{
+    background-color:var(--gray-color);
+}
+#about{
+    color: #fea038;
+    
+}
+.btn{
+    background-color: #0e92ff;
+    color: white;
+    border-radius: 10px;
+    padding:10px;
+    font-weight: bold;
+}
+.about-img{
+    background-color: black;
+}
+/* reviwes */
+.reviwes{
+    background-color: var(--gray-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card1 .rating:not(:checked) > input {
+    position: absolute;
+  appearance: none;
+}
+
+.card1 .rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+}
+
+.card1 .rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.card1 .rating > input:checked + label:hover,
+.card1 .rating > input:checked + label:hover ~ label,
+.card1 .rating > input:checked ~ label:hover,
+.card1 .rating > input:checked ~ label:hover ~ label,
+.card1 .rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.card1 .rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.card1 .rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+.card1 img{
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0px 5px;
+}
+
+
+.form {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 80%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
